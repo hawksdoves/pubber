@@ -15,7 +15,7 @@ routes.use((req, res, next) => {
 });
 
 routes.get('/', (req, res) => {
-  res.status(200).sendFile('./views/index.html');
+  res.status(200).sendFile('index.html', { root: 'views' });
 });
 
 routes.get('/api', (req, res) => {
