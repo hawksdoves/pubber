@@ -2,11 +2,11 @@
   "name": "pubber-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "start": "nodemon .",
     "production": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,20 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mongoose": "^4.9.0"
+    "graphql": "^0.9.6",
+    "graphql-server-express": "^0.7.2",
+    "graphql-tools": "^0.11.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.9.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.17.1",
-    "eslint-config-airbnb-base": "^11.1.1",
     "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.13",
     "nodemon": "^1.11.0"
   }
 }
